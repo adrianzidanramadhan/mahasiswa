@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "MainMahasiswaFX",
+            "request": "launch",
+            "mainClass": "MainMahasiswaFX",
+            "projectName": "mahasiswa_dcd8d3db",
+            "vmArgs": "--module-path /usr/share/openjfx/lib --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "MainMahasiswa",
+            "request": "launch",
+            "mainClass": "MainMahasiswa",
+            "projectName": "mahasiswa_dcd8d3db"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "mahasiswa_dcd8d3db"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
