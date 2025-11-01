@@ -17,9 +17,9 @@ public class Mahasiswa1 {
 
     public void setNama(String nama) {
         if (nama == null || nama.trim().isEmpty()) {
-            System.out.println("❌ Nama tidak boleh kosong!");
+            System.out.println("Nama tidak boleh kosong!");
         } else if (!nama.matches("[a-zA-Z\\s]+")) {
-            System.out.println("❌ Nama hanya boleh berisi huruf dan spasi!");
+            System.out.println("Nama hanya boleh berisi huruf dan spasi!");
         } else {
             this.nama = nama;
         }
@@ -31,7 +31,7 @@ public class Mahasiswa1 {
 
     public void setNim(String nim) {
         if (nim == null || nim.trim().isEmpty()) {
-            System.out.println("❌ NIM tidak boleh kosong!");
+            System.out.println("NIM tidak boleh kosong!");
         } else {
             this.nim = nim;
         }
@@ -43,9 +43,9 @@ public class Mahasiswa1 {
 
     public void setJurusan(String jurusan) {
         if (jurusan == null || jurusan.trim().isEmpty()) {
-            System.out.println("❌ Jurusan tidak boleh kosong!");
+            System.out.println("Jurusan tidak boleh kosong!");
         } else if (jurusan.length() < 3) {
-            System.out.println("❌ Jurusan harus memiliki minimal 3 karakter!");
+            System.out.println("Jurusan harus memiliki minimal 3 karakter!");
         } else {
             this.jurusan = jurusan;
         }
@@ -59,7 +59,7 @@ public class Mahasiswa1 {
         if (umur > 0) {
             this.umur = umur;
         } else {
-            System.out.println("❌ Umur harus lebih dari 0!");
+            System.out.println("Umur harus lebih dari 0!");
         }
     }
 
@@ -71,7 +71,7 @@ public class Mahasiswa1 {
         if (tglLahir != null) {
             this.tglLahir = new Date(tglLahir.getTime());
         } else {
-            System.out.println("❌ Tanggal lahir tidak boleh null!");
+            System.out.println("Tanggal lahir tidak boleh null!");
         }
     }
 
@@ -83,7 +83,7 @@ public class Mahasiswa1 {
         if (skills != null) {
             this.skills = Arrays.copyOf(skills, skills.length);
         } else {
-            System.out.println("❌ Skills tidak boleh null!");
+            System.out.println("Skills tidak boleh null!");
         }
     }
 
